@@ -50,6 +50,7 @@ namespace TreehouseDefense
                 bool playerWon = leve1.Play();
 
                 Console.WriteLine("Player " + (playerWon ? "won" : "lost"));
+                Console.ReadLine();
             }
             catch (OutOfBoundsException ex)
             {
