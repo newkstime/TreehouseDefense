@@ -23,24 +23,6 @@ namespace TreehouseDefense.Tests
         }
 
         [Fact()]
-        public void ToStringTest()
-        {
-            Assert.True(false, "This test needs an implementation");
-        }
-
-        [Fact()]
-        public void EqualsTest()
-        {
-            Assert.True(false, "This test needs an implementation");
-        }
-
-        [Fact()]
-        public void GetHashCodeTest()
-        {
-            Assert.True(false, "This test needs an implementation");
-        }
-
-        [Fact()]
         public void DistanceToWithPathagoreanTriple()
         {
             var point = new Point(3, 4);
@@ -67,9 +49,45 @@ namespace TreehouseDefense.Tests
         }
 
         [Fact()]
-        public void DistanceToTest1()
+        public void DoesNotEqualNull()
         {
-            Assert.True(false, "This test needs an implementation");
+            var target = new Point(0, 0);
+            Assert.False(target.Equals(null));
+        }
+
+        [Fact()]
+        public void DistinctObjectsAreEqual()
+        {
+            var target = new Point(4, 5);
+            Assert.True(target.Equals(new Point(4, 5)));
+        }
+
+        [Fact()]
+        public void PointsAreNotEqual()
+        {
+            var target = new Point(4, 5);
+            Assert.False(target.Equals(new Point(4, 6)));
+        }
+
+        [Fact()]
+        public void SimilarPointsHaveDifferentHasCodes1()
+        {
+            var target = new Point(4, 5);
+            Assert.NotEqual(new Point(5, 4).GetHashCode(), target.GetHashCode());
+        }
+
+        [Fact()]
+        public void SimilarPointsHaveDifferentHasCodes2()
+        {
+            var target = new Point(4, 5);
+            Assert.NotEqual(new Point(4, 6).GetHashCode(), target.GetHashCode());
+        }
+
+        [Fact()]
+        public void EqualPointsHaveSameHashCodes()
+        {
+            var target = new Point(4, 5);
+            Assert.Equal(new Point(4, 5).GetHashCode(), target.GetHashCode());
         }
     }
 }

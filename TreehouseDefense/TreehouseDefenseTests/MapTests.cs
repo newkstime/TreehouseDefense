@@ -11,9 +11,9 @@ namespace TreehouseDefense.Tests
     public class MapTests
     {
         [Fact()]
-        public void MapTest()
+        public void MapSizeTooSmall()
         {
-            var exception = Assert.Throws<ArgumentOutOfRangeException>(() => new Map(0,0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Map(0,0));
         }
 
         [Fact]
