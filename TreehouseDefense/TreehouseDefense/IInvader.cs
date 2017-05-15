@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace TreehouseDefense
 {
-    interface IMappable
+    public interface IMappable
     {
         MapLocation Location { get; }
     }
 
-    interface IMovable
+    public interface IMovable
     {
         void Move();
     }
 
-    interface IInvader : IMappable, IMovable
+    public interface IInvader : IMappable, IMovable
     {
         bool HasScored { get; }
 
