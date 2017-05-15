@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreehouseDefense", "TreehouseDefense\TreehouseDefense.csproj", "{F39CBEB4-9AD2-4346-AA5E-A057EFEE13BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreehouseDefenseTests", "TreehouseDefenseTests\TreehouseDefenseTests.csproj", "{64BC817D-F93E-406D-BEEA-4E717393BB3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F39CBEB4-9AD2-4346-AA5E-A057EFEE13BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F39CBEB4-9AD2-4346-AA5E-A057EFEE13BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F39CBEB4-9AD2-4346-AA5E-A057EFEE13BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BC817D-F93E-406D-BEEA-4E717393BB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BC817D-F93E-406D-BEEA-4E717393BB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BC817D-F93E-406D-BEEA-4E717393BB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BC817D-F93E-406D-BEEA-4E717393BB3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
